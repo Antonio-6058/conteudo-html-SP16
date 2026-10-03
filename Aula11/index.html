@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Aula11 html</title>
+
+    <style>
+        .lista-nav {
+            list-style-type: none;
+            background-color: #f2f2f2;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            color: #434347;
+            border-radius: 5px;
+        }
+        .lista-nav li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: rgb(241, 241, 243);
+            background-color: #551e1e;
+            text-align: center;
+            padding: 16px 45px;
+            text-decoration: none;
+            font-family: monospace, Helvetica, sans-serif;
+            font-weight: bold;
+            margin: 0px 17px;
+            border-radius: 8px;
+        }
+
+        a:hover {
+            background-color: #c54545;
+             transform: scale(1.1);
+             transition: 0.4s;
+        }/*trocar a cor de fundo quando o mouse passar por cima e aumenta seu tamanho com o transform: scale*/
+        a:active {
+            background-color: #ad2929;
+            color: #020202;
+            transition: 0.3s;
+           
+        }/*trocar a cor de fundo quando clicar no elemento */
+        </style>
+     
+  </head>
+  <body>
+    <h1>Listas não ordenadas no html</h1>
+
+    <ul>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ul>
+    <hr />
+
+    <h2>Alterando estilos de marcadores</h2>
+
+    <ul style="list-style-type: disc">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+
+    <br />
+
+    <h3>List-style-type: circle;</h3>
+
+    <ul style="list-style-type: circle">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+
+    <br />
+
+    <h3>List-style-type: square;</h3>
+
+    <ul style="list-style-type: square">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+
+    <br />
+
+    <h3>List-style-type: none;</h3>
+
+    <ul style="list-style-type: none">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+
+    <h2>Listas aninhadas</h2>
+
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+        </ul>
+        <li>Item</li>
+        <hr>
+
+        <h2>Listas horizontais</h2>
+
+        <ul class="lista-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </ul>
+  </body>
+</html>
