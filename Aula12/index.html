@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Aula12 html</title>
+
+    <style>
+      .boxfloat {
+        /* alinhando divs com o float */
+       width: 100%;
+       overflow: auto;
+      }
+      .boxfloat div {
+        float: left;
+        width: 33.33%;
+        
+      }
+
+      .boxinlineblock {
+        /* alinhando divs com o display inline-block */
+        width: 100%;
+        overflow: auto;
+      }
+      .boxinlineblock div {
+        display: inline-block;
+      }
+
+      .boxflex {
+        /* alinhando divs com o display flex */
+        display: flex;
+      }
+      .boxflex div {
+        width: 33.33%;
+      }
+
+      .boxgride {
+        /* alinhando divs com o display gride */
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Divs no html</h1>
+    <h3>Vários elementos div</h3>
+
+      <div style="background-color: rgb(129, 28, 28)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+
+      <div style="background-color: rgb(58, 27, 107)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+
+      <div style="background-color: rgb(34, 63, 26)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+    <hr />
+
+    <h2>Alinhando divs lado a lado</h2>
+    <h3>Ultilizando o float</h3>
+
+     <div class="boxfloat">
+      <div style="background-color: rgb(129, 28, 28)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+
+      <div style="background-color: rgb(58, 27, 107)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+
+      <div style="background-color: rgb(34, 63, 26)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+    </div>
+
+    <br>
+    <h3>Utilizando o elemento de bloco em linha</h3>
+        <div class="boxinlineblock">
+      <div style="background-color: rgb(111, 121, 70)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+
+      <div style="background-color: rgb(108, 230, 114)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+
+      <div style="background-color: rgb(201, 162, 36)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+    </div>
+
+    <br>
+    <h3>Utilizando o elemento de display flex</h3>
+        <div class="boxflex">
+      <div style="background-color: rgb(111, 121, 70)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+
+      <div style="background-color: rgb(108, 230, 114)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+
+      <div style="background-color: rgb(201, 162, 36)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+    </div>
+
+    <br>
+    <h3>Utilizando o elemento gride</h3>
+        <div class="boxgride">
+      <div style="background-color: rgb(111, 121, 70)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+
+      <div style="background-color: rgb(108, 230, 114)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+
+      <div style="background-color: rgb(201, 162, 36)">
+        <h2>Isso é um h2</h2>
+        <p>Isso é um parágrafo;</p>
+        <p>Isso é um parágrafo;</p>
+      </div>
+    </div>
+  </body>
+</html>
