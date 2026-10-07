@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula13 html02</title>
+    <style>
+        #meuh2 {
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+            border: 4px solid black;
+            background-color: rgb(99, 20, 20);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>id no html</h1>
+
+    <h2 id="meuh2">Eu sou um h2 de id</h2>
+
+    <h3 id="meu-h3">turma sp-16</h3>
+
+    <button onclick="alterarConteudo()">Alterar conteúdo</button>
+
+    <script>
+        function alterarConteudo() {
+            // document=codigo, getElementById=pegar o elemento pelo id, innerHTML=alterar o conteudo do elemento, style=alterar o estilo do elemento, color=cor do elemento
+            // trocar conteúdo
+            document.getElementById('meu-h3').innerHTML = "Somente a dor coletiva gera união";
+            // trocar cor do texto
+            document.getElementById('meu-h3').style.color = "rgb(20, 99, 20)";
+            // trocar tamanho da fonte
+            document.getElementById('meu-h3').style.fontSize = "28px";
+        }
+    </script>
+</body>
+</html>

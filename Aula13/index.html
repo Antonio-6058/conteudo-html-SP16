@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Aula13 html</title>
+
+    <style>
+      .destaque {
+        color: red;
+        font-weight: bold;
+        font-weight: 150%;
+        transform: scale(1.2);
+        transition: 0.2s;
+
+      }
+      .cidade {
+        background-color: rgb(39, 85, 57); opacity: 80%;
+        padding: 10px;
+        color: ghostwhite;
+      }
+      .center {
+        background-color: rgb(25, 53, 35); opacity: 80%;
+        text-align: center;
+      }
+
+        .mesmaclass {
+            background-color: rgb(80, 25, 82); opacity: 80%;
+            padding: 4px;
+            font-size: 20px;
+            border: 4px solid black;
+            color: ghostwhite;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Class no html</h1>
+
+    <h2>Exemplo de <span class="destaque">importância</span> no conteudo.</h2>
+
+    <p>Exemplo de <span class="destaque">importância</span> no conteudo.</p>
+    <hr>
+    <!-- criar container atalho mão cansada = .container -->
+     <h3>Definindo mais de uma classe para elementos.</h3>
+
+     <h2 class="cidade center">São Paulo</h2>
+     <h2 class="cidade">Rio de Janeiro</h2>
+     <h2 class="cidade">Natal</h2>
+
+     <hr>
+
+     <h3>Elementos diferentes para a mesma classe.</h3>
+     <h4 class="mesmaclass">Isso é um h4</h4>
+     <p class="mesmaclass">Isso é um paragrafo</p>
+  </body>
+</html>
