@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Aula14 html</title>
+</head>
+<body>
+    <h1>JavaScript no html</h1>
+    <button onclick="document.getElementById('ex1').innerHTML = new Date()">Adicionar Data e Hora</button>
+    <p id="ex1"></p>
+    <hr style="border: 1px solid rgb(172, 8, 8);">
+
+    <h3>Inserindo conteúdo na página com JavaScript</h3>
+    <!-- p=paragrafo, id=identificador, ex2=nome do identificador -->
+    <p id="ex2"></p>
+    <script>
+        // document=codigo, getElementById= metodo, função para pegar o elemento pelo id, innerHTML=alterar o conteudo do elemento, "Hello World!"=conteudo que será inserido no elemento
+        document.getElementById('ex2').innerHTML = "Hello World!";
+    </script>
+    <hr style="border: 1px solid rgb(172, 8, 8);">
+
+    <h3>Alterando o estilo de elementos com JavaScript</h3>
+
+    <p id="ex3">Somente a dor coletiva gera união.</p>
+
+    <button onclick="alterarEstilo()">Alterar Estilo</button>
+
+    <script>
+        document.getElementById('ex2').innerHTML = "Hello World!";
+        // Alterando o estilo do elemento com ID 'ex3'
+        function alterarEstilo() {
+        document.getElementById('ex3').style.color = "blue";
+        document.getElementById('ex3').style.backgroundColor = "lightgray";
+        document.getElementById('ex3').style.border = "4px solid black";
+        document.getElementById('ex3').style.padding = "10px";
+        document.getElementById('ex3').style.fontFamily = "Arial, sans-serif";
+    }
+    </script>
+
+    <hr style="border: 1px solid rgb(172, 8, 8);">
+
+   </body>
+</html>
